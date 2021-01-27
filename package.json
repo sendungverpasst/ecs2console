@@ -17,5 +17,8 @@
   "preferGlobal": true,
   "devDependencies": {
     "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "commander": "^7.0.0"
   }
 }

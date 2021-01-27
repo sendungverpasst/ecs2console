@@ -1,6 +1,17 @@
 #!/usr/bin/env node
 
 const readline = require('readline')
+const { Command } = require('commander')
+
+const program = new Command()
+program.version('1.0.0')
+
+program
+  .option('-l, --level', 'Filter logs by log level. Possible values: fatal, error, warn, info, debug, trace')
+
+program.parse(process.argv)
+
+console.log(program.options)
 
 const rl = readline.createInterface({
   input: process.stdin,
