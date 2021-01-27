@@ -14,5 +14,8 @@
   },
   "author": "Florian Pahl",
   "license": "ISC",
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
 }
