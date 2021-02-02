@@ -59,7 +59,8 @@ rl.on('line', function (line) {
 function convert (line, levelNr) {
   try {
     const json = JSON.parse(line)
-    const level = json.log.level
+    // different output from ecs-pino-format Version 0.2.0 vs 0.1.0
+    const level = json['log.level'] || json.log.level
 
     // filter by log level
     const loggedLevelNr = levels[level.toLowerCase()].number
@@ -71,6 +72,7 @@ function convert (line, levelNr) {
 
     return `${timestamp} - ${levelFormatted}: ${message}`
   } catch (err) {
+    console.log(err)
     return line
   }
 }
