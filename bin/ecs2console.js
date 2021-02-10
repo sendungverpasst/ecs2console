@@ -91,6 +91,10 @@ function formatLevel (level) {
   formatted += '  '
   formatted = formatted.substring(0, 5)
 
-  const color = levels[level].color
-  return color(formatted)
+  if (levels[level]) {
+    const color = levels[level].color
+    return color(formatted)
+  } else {
+    return formatted
+  }
 }
