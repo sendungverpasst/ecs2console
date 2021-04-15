@@ -72,7 +72,7 @@ function convert (line, levelNr) {
 
     return `${timestamp} - ${levelFormatted}: ${message}`
   } catch (err) {
-    console.log(err)
+    // console.log(err)
     return line
   }
 }
