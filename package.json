@@ -1,10 +1,11 @@
 {
-  "name": "ecs2console",
+  "name": "@sendungverpasst/ecs2console",
   "version": "1.0.0",
-  "description": "Read ECS logs from stdin and convert to console logs",
+  "author": "Florian Pahl <florian@sendungverpasst.de>",
+  "description": "Read JSON logs in ECS (Elastic Common Schema) format from stdin and pretty print to console",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fpahl/ecs2console.git"
+    "url": "https://github.com/sendungverpasst/ecs2console.git"
   },
   "bin": {
     "ecs2console": "./bin/ecs2console.js"
@@ -12,8 +13,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Florian Pahl",
-  "license": "ISC",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/sendungverpasst/ecs2console",
+  "bugs": {
+    "url": "https://github.com/sendungverpasst/ecs2console/issues"
+  },
   "preferGlobal": true,
   "devDependencies": {
     "standard": "^16.0.3"

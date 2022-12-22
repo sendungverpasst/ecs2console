@@ -1,6 +1,6 @@
 # ecs2console
 
-Convert logs in ECS format to console readable output. 
+Convert JSON log output in ECS (Elastic Common Schema) format to pretty console readable output. 
 
 ## Install
 
