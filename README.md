@@ -5,11 +5,10 @@ Convert JSON log output in ECS (Elastic Common Schema) format to pretty console 
 ## Install
 
 ``` bash
-npm install
-npm link
+npm install -g @sendungverpasst/ecs2console
 ```
 
-On MacOS the folder  `/usr/local` might not be writeable for the current user. You ccan change this by executing:
+On MacOS the folder  `/usr/local` might not be writeable for the current user. You can change this by executing:
 ``` bash
 sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 ```
